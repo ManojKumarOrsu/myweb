@@ -28,12 +28,6 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
-		
-		<dependency>
-    			<groupId>org.sonarsource.sonarqube</groupId>
-    			<artifactId>sonar-scanner-engine</artifactId>
-    			<version>9.5.0</version>
-		</dependency>
 
 	</dependencies>
 	
