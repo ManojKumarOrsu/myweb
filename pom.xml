@@ -30,14 +30,10 @@
 		</dependency>
 		
 		<dependency>
-      			<!-- groupId has changed to 'org.sonarsource.api.plugin' starting on version 9.5 -->
-      			<groupId>org.sonarsource.sonarqube</groupId>
-      			<artifactId>sonar-plugin-api</artifactId>
-      			<!-- minimal version of SonarQube to support. -->
-      			<version>8.9</version>
-      			<!-- mandatory scope -->
-      			<scope>provided</scope>
-    		</dependency>
+    			<groupId>org.sonarsource.sonarqube</groupId>
+    			<artifactId>sonar-scanner-engine</artifactId>
+    			<version>9.5.0</version>
+		</dependency>
 
 	</dependencies>
 	
