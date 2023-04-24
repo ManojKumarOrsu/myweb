@@ -13,9 +13,16 @@
 		<sonar.host.url>http://34.203.246.173:9000/</sonar.host.url>
 
 	</properties>
-	<dependencies>
-		<source>1.8</source>
-		<target>1.8</target>
+	<dependencies>	
+		<dependency>
+          		<groupId>org.apache.maven.plugins</groupId>
+          		<artifactId>maven-compiler-plugin</artifactId>
+          		<version>3.8.1</version>
+			<configuration>
+				<source>1.8</source>
+				<target>1.8</target>
+			</configuration>
+        	</dependency>
 		
 		<dependency>
 			<groupId>junit</groupId>
