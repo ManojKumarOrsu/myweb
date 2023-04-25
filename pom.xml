@@ -8,43 +8,36 @@
 	<name>Java Home myweb</name>
 	<url>http://maven.apache.org</url>
 	
-	<properties> 
-   		
+	<properties>
 		<docker.image.prefix>kammana</docker.image.prefix>
-		<sonar.host.url>http://34.203.246.173:9000/</sonar.host.url>
+		<sonar.host.url>http://18.181.253.53:9000/</sonar.host.url>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+                <maven.compiler.source>1.7</maven.compiler.source>
+                <maven.compiler.target>1.7</maven.compiler.target>
+		
 
 	</properties>
 	<dependencies>
-		<dependency>
-   			<groupId>org.apache.maven.plugins</groupId>
-    			<artifactId>maven-war-plugin</artifactId>
-    			<version>3.3.2</version>
-		</dependency>
+
 		
 		<dependency>
-      			<groupId>junit</groupId>
-      			<artifactId>junit</artifactId>
-      			<version>4.13.1</version>
-      			<scope>test</scope>
-    		</dependency>
-		
-		<dependency>
-    			<groupId>org.sonarsource.scanner.maven</groupId>
-    			<artifactId>sonar-maven-plugin</artifactId>
-    			<version>3.6.0.1398</version>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
 		</dependency>
-	
+
 	</dependencies>
 	
 	<distributionManagement>
 		 <snapshotRepository>
 		    <id>nexusRepo</id>
-		    <url>http://18.212.160.7:8081/repository/snapshot//</url>
+		    <url>http://18.183.58.171:8081/repository/sample-snapshots/</url>
 		 </snapshotRepository>
 		
 		<repository>
 		    <id>nexusRepo</id>
-		    <url>http://18.212.160.7:8081/repository/releases//</url>
+		    <url>http://18.183.58.171:8081/repository/sample-releases/</url>
 		</repository>
   	</distributionManagement>
 	
@@ -55,32 +48,6 @@
 		<url>http://repo1.maven.org/maven2</url>
 	    </pluginRepository>
 	</pluginRepositories>
-	
-<build>
-   <plugins>
-	<plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.8.1</version>
-		<configuration>
-			<source>1.8</source>
-			<target>1.8</target>
-		</configuration>
-        </plugin>
-	<plugin>
-        	<artifactId>maven-war-plugin</artifactId>
-    		<version>3.2.2</version>
-    		<configuration>
-        		<failOnMissingWebXml>false</failOnMissingWebXml>
-    		</configuration>
-    	</plugin>
 
-        <plugin>
-          <groupId>org.jacoco</groupId>
-          <artifactId>jacoco-maven-plugin</artifactId>
-          <version>0.8.6</version>
-        </plugin>
-   </plugins>
- </build>
 	
 </project>
